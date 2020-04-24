@@ -1,0 +1,83 @@
+.navbar .navbar-light .bg-light {
+  visibility: hidden;
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+
+.top-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  height: 80px;
+  margin: 0 auto;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  font-family: "EB Garamond", Times, Serif;
+
+  .navbar-brand {
+    font-size: 15px;
+    color: white;
+    padding: 0px 15px;
+    color: orange;
+  }
+  .navbar-nav li .nav-link {
+    color: white;
+    font-size: 14px;
+    padding: 29px 15px;
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    /* letter-spacing: 0.1em; */
+  }
+
+  a.nav-link {
+    color: white;
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+  }
+  li a.nav-link:hover {
+    color: white !important;
+  }
+
+  .light-header {
+    height: 70px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+  }
+
+  .light-header .navbar-brand {
+    color: orange;
+  }
+
+  .navbar-nav li .nav-link {
+    color: orange;
+    padding: 19px 15px;
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+  }
+
+  light-header li a.nav-link:hover,
+  .light-header a.nav-link {
+    color: orange;
+  }
+}
+
+.fa .fa-bars {
+  color: white;
+}
+
+.fa .fa-bars .lightup {
+  color: orange !important;
+}
