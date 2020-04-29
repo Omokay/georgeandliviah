@@ -9,11 +9,11 @@ const Hero = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-12'>
-                        <h2 className='pt-40'>George & Liviah Academy
+                        <h2 className='pt-40'><span className='school'>George</span> & <span className='school'>Liviah</span> Academy
                         <br /><span className='accent'>A Journey</span> to <span className='accent'>Excellence</span>
                         </h2>
                         <p>We will guide your steps.</p>
-                        <a href='#' className='hero-btn'>Learn  More</a>
+                        <a href='' className='hero-btn'>Learn  More</a>
                     </div>
 
 

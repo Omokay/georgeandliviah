@@ -8,32 +8,32 @@ class Header extends Component {
         super(props);
 
         this.state = {
-            navbackground: 'top-nav'
+            navbackground: 'top-nav light-header'
         };
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    handleScroll = (e) => {
-        let element = e.target
-        if (element.scrollHeight >= 100) {
-            this.setState({
-                navbackground: 'top-nav light-header'
-            });
-        } else {
-            this.setState({
-                navbackground: this.state.navbackground
-            });
-        }
+        window.addEventListener('scroll', (event) => {
+            // handle the scroll event 
+            const top = event.target.documentElement.scrollTop;
+            if (top > 100) {
+                this.setState({
+                    navbackground: 'top-nav light-header'
+                });
+            }
+            else {
+                this.setState({
+                    navbackground: 'top-nav'
+                });
+            }
+        });
     }
 
     render() {
         return (
             <div>
-                <nav className='navbar navbar-expand-lg  navbar-light light-bg fixed-top top-nav'>
-                    <a className='navbar-brand' href='#'><strong>GEORGE & LIVIAH</strong></a>
+                <nav className={`navbar navbar-expand-lg navbar-light light-bg fixed-top ${this.state.navbackground}`}>
+                    <a className='navbar-brand' href=''><strong>GEORGE & LIVIAH</strong></a>
                     <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                         <span className='navbar-toggler-icon'>
                         </span>
@@ -41,22 +41,22 @@ class Header extends Component {
                     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                         <ul className='navbar-nav ml-auto'>
                             <li className='nav-item active'>
-                                <a className='nav-link' href='#'>Home</a>
+                                <a className='nav-link' href=''>Home</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='#'>About us</a>
+                                <a className='nav-link' href=''>About us</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='#'>Services</a>
+                                <a className='nav-link' href=''>Services</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='#'>Events </a>
+                                <a className='nav-link' href=''>Events </a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='#'>Leadership</a>
+                                <a className='nav-link' href=''>Leadership</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='#'>Contact</a>
+                                <a className='nav-link' href=''>Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -65,7 +65,7 @@ class Header extends Component {
         )
 
     }
-    
+
 }
 
 export default Header;
