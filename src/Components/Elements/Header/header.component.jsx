@@ -16,12 +16,12 @@ class Header extends Component {
         window.addEventListener('scroll', (event) => {
             // handle the scroll event 
             const top = event.target.documentElement.scrollTop;
-            if (top > 100) {
+            if (top > 150) {
                 this.setState({
                     navbackground: 'top-nav light-header'
                 });
             }
-            else {
+            else if (top <= 150) {
                 this.setState({
                     navbackground: 'top-nav'
                 });
@@ -33,7 +33,7 @@ class Header extends Component {
         return (
             <div>
                 <nav className={`navbar navbar-expand-lg navbar-light light-bg fixed-top ${this.state.navbackground}`}>
-                    <a className='navbar-brand' href=''><strong>GEORGE & LIVIAH</strong></a>
+                    <a className='navbar-brand' href='#'><strong>GEORGE & LIVIAH</strong></a>
                     <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                         <span className='navbar-toggler-icon'>
                         </span>
@@ -41,22 +41,22 @@ class Header extends Component {
                     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                         <ul className='navbar-nav ml-auto'>
                             <li className='nav-item active'>
-                                <a className='nav-link' href=''>Home</a>
+                                <a className='nav-link' href='#'>Home</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href=''>About us</a>
+                                <a className='nav-link' href='#'>About us</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href=''>Services</a>
+                                <a className='nav-link' href='#'>Services</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href=''>Events </a>
+                                <a className='nav-link' href='#'>Events </a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href=''>Leadership</a>
+                                <a className='nav-link' href='#'>Leadership</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href=''>Contact</a>
+                                <a className='nav-link' href='#'>Contact</a>
                             </li>
                         </ul>
                     </div>
