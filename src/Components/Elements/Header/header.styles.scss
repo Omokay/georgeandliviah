@@ -23,7 +23,10 @@
     font-size: 15px;
     color: white;
     padding: 0px 15px;
-    color: orange;
+
+    &:hover {
+      color: orange;
+    }
   }
   .navbar-nav li .nav-link {
     color: white;
@@ -44,40 +47,41 @@
     -moz-transition: 0.5s ease-in;
   }
   li a.nav-link:hover {
-    color: white !important;
+    color: orange !important;
   }
 
-  .light-header {
+
+}
+ .fa .fa-bars {
+      color: white;
+    }
+
+    .fa .fa-bars .lightup {
+      color: orange !important;
+    }
+
+     nav.navbar.navbar-expand-lg.navbar-light.light-bg.fixed-top.top-nav.light-header {
     height: 70px;
-    background: white;
+    background: white !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
     transition: 0.5s ease-in;
     -webkit-transition: 0.5s ease-in;
     -moz-transition: 0.5s ease-in;
+    .navbar-brand {
+      color: orange;
+    }
+
+    li .nav-link {
+      color: orange;
+      padding: 19px 15px;
+      transition: 0.5s ease-in;
+      -webkit-transition: 0.5s ease-in;
+      -moz-transition: 0.5s ease-in;
+
+
+      li a.nav-link:hover,
+      a.nav-link {
+        color: rgb(138, 91, 3);
+      }
+    }
   }
-
-  .light-header .navbar-brand {
-    color: orange;
-  }
-
-  .navbar-nav li .nav-link {
-    color: orange;
-    padding: 19px 15px;
-    transition: 0.5s ease-in;
-    -webkit-transition: 0.5s ease-in;
-    -moz-transition: 0.5s ease-in;
-  }
-
-  light-header li a.nav-link:hover,
-  .light-header a.nav-link {
-    color: orange;
-  }
-}
-
-.fa .fa-bars {
-  color: white;
-}
-
-.fa .fa-bars .lightup {
-  color: orange !important;
-}

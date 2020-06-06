@@ -1,0 +1,42 @@
+.about-section {
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-image: url("https://ik.imagekit.io/bn1u7wfqt/background_Xeh8hxLZ2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+
+
+  .about-pane {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    .left {
+      background: #fff;
+      padding-top: 0;
+      h2 {
+        font-size: 32px;
+        font-weight: bold;
+      }
+      p {
+        width: 90%;
+        line-height: 2.0;
+        font-size: 18px;
+      }
+    }
+    .right {
+      background-image: url('https://ik.imagekit.io/bn1u7wfqt/about_mZYDIXqZl.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0;
+    }
+    .halves {
+      padding: 150px 80px;
+      margin: 0 auto;
+    }
+  }
+}

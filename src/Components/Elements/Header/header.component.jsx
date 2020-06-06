@@ -13,26 +13,26 @@ class Header extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    handleScroll = (e) => {
-        let element = e.target
-        if (element.scrollHeight >= 100) {
-            this.setState({
-                navbackground: 'top-nav light-header'
-            });
-        } else {
-            this.setState({
-                navbackground: this.state.navbackground
-            });
-        }
+        window.addEventListener('scroll', (event) => {
+            // handle the scroll event 
+            const top = event.target.documentElement.scrollTop;
+            if (top > 150) {
+                this.setState({
+                    navbackground: 'top-nav light-header'
+                });
+            }
+            else if (top <= 150) {
+                this.setState({
+                    navbackground: 'top-nav'
+                });
+            }
+        });
     }
 
     render() {
         return (
             <div>
-                <nav className='navbar navbar-expand-lg  navbar-light light-bg fixed-top top-nav'>
+                <nav className={`navbar navbar-expand-lg navbar-light light-bg fixed-top ${this.state.navbackground}`}>
                     <a className='navbar-brand' href='#'><strong>GEORGE & LIVIAH</strong></a>
                     <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                         <span className='navbar-toggler-icon'>
@@ -65,7 +65,7 @@ class Header extends Component {
         )
 
     }
-    
+
 }
 
 export default Header;
