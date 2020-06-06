@@ -1,0 +1,28 @@
+  .action-btn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 0 30px;
+    height: 64px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.036em;
+    line-height: 64px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none !important;
+    color: white;
+    cursor: pointer;
+    border: 0 solid transparent;
+    background: orange;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+
+    &:hover {
+      padding-left: calc(30px + 15px);
+      padding-right: calc(30px + 15px);
+      color: darkslategray;
+    }
+  }

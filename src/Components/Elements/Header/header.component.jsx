@@ -8,7 +8,7 @@ class Header extends Component {
         super(props);
 
         this.state = {
-            navbackground: 'top-nav light-header'
+            navbackground: 'top-nav'
         };
     }
 
