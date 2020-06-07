@@ -1,0 +1,20 @@
+.gallery-page {
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: auto;
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .gallery-column {
+      position: relative;
+      img {
+        width: 480px;
+        height: 300px;
+      }
+    }
+  }
+}
