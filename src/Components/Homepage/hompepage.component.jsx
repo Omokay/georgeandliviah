@@ -5,6 +5,7 @@ import Hero from '../Elements/Hero/hero.component';
 import Aboutus from '../Elements/Aboutus/about.component';
 import Footer from '../Elements/Footer/footer.component'
 import Gallery from '../Elements/Gallery/gallery.component';
+import Team from '../Elements/Team/team.component';
 
 const Homepage = () => {
     return (
@@ -13,6 +14,7 @@ const Homepage = () => {
             <Hero />
             <Aboutus />
             <Gallery />
+            <Team />
             <Footer />
         </div>
     )

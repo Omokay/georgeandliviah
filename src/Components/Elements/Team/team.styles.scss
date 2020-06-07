@@ -1,0 +1,29 @@
+.team-profile {
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 50px 50px;
+  height: auto;
+    h2 {
+        padding: 30px 50px 50px 50px;
+        font-size: 32px;
+        font-weight: bolder1;
+    }
+  .team-well {
+    height: 300px !important;
+
+    .team-role {
+      color: black !important;
+      font-size: 12px;
+    }
+    .team-name {
+      color: orange !important;
+      font-size: 18px;
+    }
+  }
+
+  .team-card:hover {
+    cursor: pointer;
+  }
+}
