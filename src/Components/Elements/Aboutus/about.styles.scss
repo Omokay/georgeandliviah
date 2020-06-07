@@ -12,11 +12,11 @@
 
   .about-pane {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
     .left {
-      background: #fff;
+      background: rgb(245, 241, 234);
       padding-top: 0;
       h2 {
         font-size: 32px;
@@ -33,6 +33,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       padding: 0;
+      height: auto;
+      width: 100%;
     }
     .halves {
       padding: 150px 80px;

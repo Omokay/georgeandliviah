@@ -1,0 +1,44 @@
+.footer {
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 350px;
+  padding: 60px 50px 10px 50px;
+  background-color: #000000;
+  color: rgb(158, 147, 126);
+  .footer-row {
+    width: 100%;
+    margin: 0 auto;
+
+    .columns {
+        padding: 10px 50px;;
+        text-align: center;
+      .sm-list {
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .icons {
+          color: rgb(158, 147, 126);
+          font-weight: 100;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: bolder;
+      padding-bottom: 20px;
+      color: rgb(241, 236, 225);
+    }
+    
+  }
+  .text-copyright {
+        position: absolute;
+        bottom: 20px;
+        margin: 0 auto;
+        left: 40%;
+    }
+}

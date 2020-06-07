@@ -7,7 +7,7 @@ const Aboutus = () => {
     return (
         <div className='about-section'>
             <div className='about-pane row'>
-                <div className='halves left col-md-6 col-sm-6 col-xs-12'>
+                <div className='halves left col-md-6 col-sm-12 col-xs-12'>
                     <h2>About us</h2>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -21,7 +21,7 @@ const Aboutus = () => {
                         <ActionButton>Learn more</ActionButton>
                     </div>
                 </div>
-                <div className=' halves right col-md-6 col-sm-6 col-xs-12'>
+                <div className=' halves right col-md-6 col-sm-12 col-xs-12'>
 
                 </div>
             </div>
