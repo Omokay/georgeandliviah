@@ -1,5 +1,6 @@
 import React from 'react';
 import allData from './gallery-data';
+import ActionButton from '../../Elements/ActionButton/actionButton.component';
 import './gallery.styles.scss';
 
 const Gallery = () => {
@@ -8,6 +9,7 @@ const Gallery = () => {
     console.log(images);
     return (
         <div className='gallery-page'>
+            {/* <ActionButton className='gallery-btn'>View more</ActionButton> */}
             <div className='gallery-row'>
                 {images.map((item) => (
                     <div className='gallery-column'>
