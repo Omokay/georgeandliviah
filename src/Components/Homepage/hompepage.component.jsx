@@ -3,6 +3,7 @@ import './homepage.styles.scss';
 import Header from '../Elements/Header/header.component';
 import Hero from '../Elements/Hero/hero.component';
 import Aboutus from '../Elements/Aboutus/about.component';
+import Footer from '../Elements/Footer/footer.component'
 
 const Homepage = () => {
     return (
@@ -10,6 +11,7 @@ const Homepage = () => {
             <Header />
             <Hero />
             <Aboutus />
+            <Footer />
         </div>
     )
 }
