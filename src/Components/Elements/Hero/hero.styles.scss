@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("https://ik.imagekit.io/bn1u7wfqt/hero__IpbKjKd2NI.jpg");
+  background-image: url("https://ik.imagekit.io/bn1u7wfqt/building__1__aakmqQQ_Z.jpg");
   background-size: cover;
   background-attachment: fixed;
   float: left;
@@ -19,24 +19,17 @@
     color: white;
 
     span {
-      color: orange;
+      color:  #ffdcb4;
   
     }
 
   }
 
   p {
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 500;
   }
-
-  i.fas {
-    width: 200px;
-    height: 100px;
-    color: var(--gray);
-  }
-
   .row .pointer {
     padding-top: 100px;
   }
@@ -44,7 +37,7 @@
 
 .bg-overlay-light:before {
   content: "";
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(10, 0, 0, 0);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -71,7 +64,7 @@
   color: white;
   cursor: pointer;
   border: 0 solid transparent;
-  background: orange;
+  background: #c060a1;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
 
